@@ -157,10 +157,10 @@ spec:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           ports:
-            - name: http-webhook
+            - name: http-wh-private
               protocol: TCP
               containerPort: 8888
-            - name: http-wh-metrics
+            - name: http-webhook
               protocol: TCP
               containerPort: 8080
           livenessProbe:
